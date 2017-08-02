@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './HelloWorld.css';
 
 class HelloWorld extends Component {
+
   constructor(props) {
     super(props);
     this.state = { greeting: 'Hello' };
@@ -22,8 +23,8 @@ class HelloWorld extends Component {
       <div className="HelloWorld">
         {this.state.greeting} {this.props.name}!
         <br/>
-        <button onClick={this.frenchify}>Frenchify!</button>
-        <button onClick={this.removeGreeting}>Remove me!</button>
+        <button className="frenchify" onClick={this.frenchify}>Frenchify!</button>
+        <button className="remove" onClick={this.removeGreeting}>Remove me!</button>
       </div>
     );
   }
